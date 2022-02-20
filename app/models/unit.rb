@@ -8,7 +8,6 @@ class Unit < ApplicationRecord
     validates :gender, presence: true
 
     after_create :update_defaults
-    after_update :update_defaults
     
     def update_defaults
         update(char_lvl: 1)
