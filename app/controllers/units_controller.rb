@@ -18,7 +18,7 @@ class UnitsController < ApplicationController
     if @unit.save
       redirect_to @unit
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -32,7 +32,7 @@ class UnitsController < ApplicationController
     if @unit.update(unit_params)
       redirect_to @unit
     else
-      render :edit
+      render :edit, status: :unprocessable_entity
     end
   end
 
@@ -40,7 +40,7 @@ class UnitsController < ApplicationController
     @unit = Unit.find(params[:id])
     @unit.destroy
 
-    redirect_to root_path
+    redirect_to root_path, status: :see_other
   end
 
   private
