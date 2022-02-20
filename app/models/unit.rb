@@ -1,6 +1,4 @@
 class Unit < ApplicationRecord
-    #include Visible
-
     has_one :equips
 
     validates :name, presence: true
