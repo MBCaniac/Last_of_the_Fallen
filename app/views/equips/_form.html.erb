@@ -1,0 +1,26 @@
+<%= form_with model: [ @unit, @unit.equips.build ] do |form| %>
+  <p>
+    <%= form.label :helm %><br>
+    <%= form.text_field :helm %>
+  </p>
+  <p>
+    <%= form.label :armor %><br>
+    <%= form.text_area :armor %>
+  </p>
+  <p>
+    <%= form.label :accessory %><br>
+    <%= form.text_area :accessory %>
+  </p>
+  <p>
+    <%= form.label :weapon %><br>
+    <%= form.text_area :weapon %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+
+  <!--<p>
+    <%= form.label :status %><br>
+    <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+  </p>-->
+<% end %>

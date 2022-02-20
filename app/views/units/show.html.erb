@@ -1,0 +1,23 @@
+<h1><%= @unit.name %></h1>
+
+<p><%= @unit.classtype %></p>
+
+<p><%= @unit.gender %></p>
+
+<p><%= @unit.char_lvl %></p>
+
+<p><%= @unit.char_xp %></p>
+
+<p><%= @unit.char_atp %></p>
+
+<p><%= @unit.char_def %></p>
+
+<p><%= @unit.char_eva %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_unit_path(@unit) %></li>
+  <li><%= link_to "Destroy", unit_path(@unit), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  class: MyString
+  gender: MyString
+  lvl: 1
+  xp: MyString
+  integer: MyString
+  hp: 1
+  tp: 1
+  def: 1
+  eva: MyString
+  integer: MyString
+  atp: 1
+
+two:
+  name: MyString
+  class: MyString
+  gender: MyString
+  lvl: 1
+  xp: MyString
+  integer: MyString
+  hp: 1
+  tp: 1
+  def: 1
+  eva: MyString
+  integer: MyString
+  atp: 1
