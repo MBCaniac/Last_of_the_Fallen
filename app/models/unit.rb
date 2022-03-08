@@ -1,6 +1,5 @@
 class Unit < ApplicationRecord
     has_one :equips
-    has_one :locations
 
     validates :name, presence: true
     validates :classtype, presence: true

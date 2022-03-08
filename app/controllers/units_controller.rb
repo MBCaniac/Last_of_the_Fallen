@@ -42,10 +42,6 @@ class UnitsController < ApplicationController
     redirect_to root_path, status: :see_other
   end
 
-  def town
-    @unit = Unit.find(params[:id])
-  end
-
   private
     def unit_params
       params.require(:unit).permit(:name, :classtype, :gender)

@@ -1,0 +1,11 @@
+<h1>Location Modification</h1>
+
+<h1><%= @location.name %></h1>
+
+<%= render "form", location: @location %>
+
+<li><%= link_to "Destroy", location_path(@location), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+
