@@ -7,6 +7,6 @@ class LocationsController < ApplicationController
 
     private
         def location_params
-            params.require(:location.permit(:bank, :shop, :quest)
+            params.require(:location).permit(:bank, :shop, :quest)
         end
 end

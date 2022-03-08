@@ -9,7 +9,6 @@ class UnitsController < ApplicationController
 
   def new
     @unit = Unit.new
-
   end
 
   def create
@@ -41,6 +40,10 @@ class UnitsController < ApplicationController
     @unit.destroy
 
     redirect_to root_path, status: :see_other
+  end
+
+  def town
+    @unit = Unit.find(params[:id])
   end
 
   private

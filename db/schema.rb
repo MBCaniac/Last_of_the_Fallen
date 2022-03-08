@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_08_150313) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_08_154608) do
   create_table "equips", force: :cascade do |t|
     t.string "helm"
     t.string "armor"
@@ -43,7 +43,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_150313) do
     t.integer "char_atp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "location"
+    t.string "locate"
     t.integer "gold"
   end
 

@@ -4,7 +4,7 @@ class Location < ApplicationRecord
     after_create :update_defaults
     
     def update_defaults
-        if (@unit.location == "Tornire")
+        if (@unit.locate == "Tornire")
             update(shop: "potion, basic bow, basic wand, basic sword", 
                 bank: "deposit, withdraw", 
                 quest: "defeat coyote")
