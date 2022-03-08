@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_03_08_143700) do
+ActiveRecord::Schema[7.0].define(version: 2022_03_08_144814) do
   create_table "equips", force: :cascade do |t|
     t.string "helm"
     t.string "armor"
@@ -22,14 +22,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_143700) do
     t.index ["unit_id"], name: "index_equips_on_unit_id"
   end
 
-  create_table "location_models", force: :cascade do |t|
+  create_table "locations", force: :cascade do |t|
     t.string "bank"
     t.string "shop"
     t.string "quest"
-    t.integer "unit_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["unit_id"], name: "index_location_models_on_unit_id"
   end
 
   create_table "units", force: :cascade do |t|
@@ -49,5 +47,4 @@ ActiveRecord::Schema[7.0].define(version: 2022_03_08_143700) do
   end
 
   add_foreign_key "equips", "units"
-  add_foreign_key "location_models", "units"
 end

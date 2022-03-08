@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   resources :units do
     resources :equips
+    resources :locations
   end
 end
