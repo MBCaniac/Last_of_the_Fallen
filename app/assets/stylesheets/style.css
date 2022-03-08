@@ -1,0 +1,35 @@
+a:visited {
+    color: red;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+}
+
+li {
+    font-size: 30px;
+    border: black solid 5px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.create {
+    text-align: center;
+    border: green solid 5px;
+    margin: auto;
+    padding: 20px;
+    width: 300px;
+    font-size: 40px;
+}
+
+body{
+    background-color: #CCCCCC;
+    color: #444444;
+}
