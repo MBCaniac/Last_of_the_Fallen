@@ -21,7 +21,7 @@
 <p><%= @unit.gold %></p>
 
 <ul>
-  <li><%= link_to "Map", location_path(@location) %></li>
+  <li><%= link_to "Map", locations_path %></li>
   <li><%= link_to "Edit", edit_unit_path(@unit) %></li>
   <li><%= link_to "Destroy", unit_path(@unit), data: {
                     turbo_method: :delete,
