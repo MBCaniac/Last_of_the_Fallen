@@ -10,11 +10,11 @@ class Unit < ApplicationRecord
     
     def update_defaults
         if (self.classtype == "warrior")
-            update(char_lvl: 1, char_xp: 0, char_atp: 30, char_def: 50, char_eva: 30, char_hp: 100, char_tp: 10, location: "Tornire")
+            update(char_lvl: 1, char_xp: 0, char_atp: 30, char_def: 50, char_eva: 30, char_hp: 100, char_tp: 10, gold: 100, location: "Tornire")
         elsif (self.classtype == "ranger")
-            update(char_lvl: 1, char_xp: 0, char_atp: 40, char_def: 30, char_eva: 40, char_hp: 80, char_tp: 20, location: "Tornire")
+            update(char_lvl: 1, char_xp: 0, char_atp: 40, char_def: 30, char_eva: 40, char_hp: 80, char_tp: 20, gold: 100, location: "Tornire")
         else
-            update(char_lvl: 1, char_xp: 0, char_atp: 50, char_def: 20, char_eva: 40, char_hp: 60, char_tp: 30, location: "Tornire")
+            update(char_lvl: 1, char_xp: 0, char_atp: 50, char_def: 20, char_eva: 40, char_hp: 60, char_tp: 30, gold: 100, location: "Tornire")
         end
     end
 end
