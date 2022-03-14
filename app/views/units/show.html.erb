@@ -1,24 +1,22 @@
-<h1><%= @unit.name %></h1>
+<h1><span class="charHead">Name:</span> <span class="charStat"><%= @unit.name %></span></h1>
 
-<p><%= @unit.classtype %></p>
+<p><span class="charHead">Class:</span> <span class="charStat"><%= @unit.classtype %></span></p>
 
-<p><%= @unit.gender %></p>
+<p><span class="charHead">HP:</span> <span class="charStat"><%= @unit.char_hp %></span></p>
 
-<p><%= @unit.char_hp %></p>
+<p><span class="charHead">TP:</span> <span class="charStat"><%= @unit.char_tp %></span></p>
 
-<p><%= @unit.char_tp %></p>
+<p><span class="charHead">LVL:</span> <span class="charStat"><%= @unit.char_lvl %></span></p>
 
-<p><%= @unit.char_lvl %></p>
+<p><span class="charHead">XP:</span> <span class="charStat"><%= @unit.char_xp %></span></p>
 
-<p><%= @unit.char_xp %></p>
+<p><span class="charHead">ATP:</span> <span class="charStat"><%= @unit.char_atp %></span></p>
 
-<p><%= @unit.char_atp %></p>
+<p><span class="charHead">DEF:</span> <span class="charStat"><%= @unit.char_def %></span></p>
 
-<p><%= @unit.char_def %></p>
+<p><span class="charHead">EVA:</span> <span class="charStat"><%= @unit.char_eva %></span></p>
 
-<p><%= @unit.char_eva %></p>
-
-<p><%= @unit.gold %></p>
+<p><span class="charHead">GOLD:</span> <span class="charStat"><%= @unit.gold %></span></p>
 
 <ul>
   <li><%= link_to "Map", locations_path %></li>

@@ -1,3 +1,19 @@
+.charHead {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.charStat {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
 a:visited {
     color: red;
 }
@@ -30,6 +46,6 @@ div.create {
 }
 
 body{
-    background-color: #CCCCCC;
+    background-color: #d88787;
     color: #444444;
 }
